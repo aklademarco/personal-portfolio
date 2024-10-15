@@ -375,7 +375,7 @@ home-img{
     }
 
     .home-img img {
-        width: 40vw;
+        width: 50%;
     }
 }
 
@@ -419,7 +419,7 @@ home-img{
     }
 
     .home-img img {
-        width: 70vw;
+        width: 70%;
         margin-top: 4rem;
     }
 
@@ -432,9 +432,16 @@ home-img{
     }
 
     .about-img {
-        width: 70vw;
-        height: 70vw;
+        width: 60vw;
+        height: 60vw;
         margin-bottom: 4rem;
+    }
+
+    .social-media a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+        margin: 2rem 1rem 2rem 0;
     }
 }
 
@@ -444,11 +451,40 @@ home-img{
     }
 
     .home-img img {
-        width: 90vw;
+        width: 90%;
     }
 
     .about-img {
-        width: 90vw;
-        height: 90vw;
+        width: 80%;
+        height: auto;
     }
+
+    .social-media a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin: 1.5rem 0.8rem 1.5rem 0;
+    }
+}
+
+/* Add this new section for social links */
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
 }
