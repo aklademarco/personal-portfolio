@@ -443,6 +443,19 @@ home-img{
         font-size: 1.8rem;
         margin: 2rem 1rem 2rem 0;
     }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .social-media a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+        margin: 1.5rem 0.8rem;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -465,6 +478,13 @@ home-img{
         font-size: 1.5rem;
         margin: 1.5rem 0.8rem 1.5rem 0;
     }
+
+    .social-media a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin: 1rem 0.5rem;
+    }
 }
 
 /* Add this new section for social links */
@@ -479,7 +499,7 @@ home-img{
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 2rem 1rem 2rem 0;
     transition: .5s ease;
 }
 
@@ -487,4 +507,76 @@ home-img{
     background: var(--main-color);
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* Social media styles */
+.social-media {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 1rem 1rem 1rem 0;
+    transition: 0.5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .social-media {
+        justify-content: center;
+    }
+
+    .social-media a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+        margin: 1rem 0.8rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .social-media a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin: 0.8rem 0.5rem;
+    }
+}
+
+/* Ensure these styles are not overridden */
+@media screen and (max-width: 768px) {
+    .social-media a {
+        display: inline-flex !important;
+        width: 3.5rem !important;
+        height: 3.5rem !important;
+        font-size: 1.8rem !important;
+        margin: 1rem 0.8rem !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .social-media a {
+        width: 3rem !important;
+        height: 3rem !important;
+        font-size: 1.5rem !important;
+        margin: 0.8rem 0.5rem !important;
+    }
 }
